@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.divclass{
+     width: 80%;
+     max-width: 768px;
+     margin: 0px auto;
+     height: 400px;
+}
+.divclasse{
+     width: 100%;
+     max-width: 768px;
+     margin: 2px auto;
+     height: 400px;
+     text-align: center;
+     background-color: #FFFFFF ;
+     box-shadow: 1px 1px 1px #DDDDDD ;
+}
+.divclassweq{
+     width: 100%;
+     max-width: 768px;
+     margin: 5px auto;
+     text-align: center;
+     background-color: #FFFFFF ;
+     box-shadow: 1px 1px 1px 1px #DDDDDD ;
+}

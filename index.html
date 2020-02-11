@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bee network蜂网</title>
+    <!-- 引入bootstrap 和  jquery-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <!--  引入样式 index-->
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/template-web.js"></script>
+    <style>
+           a{
+               color: black;
+               text-decoration: none !important;
+          }
+         a:hover{
+               color: rgba(0,0,0, .5);
+          }
+           #button:hover{
+                 font-size: 18px !important;
+           }
+           #dhfjdsj a:hover{
+                   background-color:coral;
+           }
+           #xinxi span:hover{
+                    background-color: rgba(0,0,0, .5);
+           }
+           #dhfjdsj>a li:hover{
+                  background-color: salmon;
+           }
+    </style>
+</head>
+<body>
+    <!-- <div class="container "> -->
+        <ul class="nav justify-content-center fixed-top " style="background-color: #FFFFFF; border: 1px solid #DDDDDD ;">
+            <li class="nav-item">
+                <a class="nav-link active" style="color: black;"  href="./index.html">Bee network <sub>蜂网</sub></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html"><sub>首页</sub></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./html/guanyuwomeng.html" target="_blank"><sub>关于我们</sub></a>
+            </li>
+            <li class="nav-item" style="margin-left: 50px;" style="position: relative;">
+                 <span class="nav-link" href="#" id="denglg">
+                    <svg t="1579428196670" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1140" width="30" height="30" id="denglu">
+                    <path d="M736.8 653.6c0 0-124.8-37.6-141.6-60.8L595.2 515.2c0 0 36.8-34.4 36.8-88.8 0 0 25.6-4 25.6-48.8 0 0 4.8-22.4-12-45.6 0 0 20.8-108-16.8-142.4 0 0-34.4-56.8-116.8-61.6-82.4 4.8-116.8 61.6-116.8 61.6-37.6 34.4-16.8 142.4-16.8 142.4C361.6 355.2 366.4 377.6 366.4 377.6c0 44.8 25.6 48.8 25.6 48.8C392 480.8 428.8 515.2 428.8 515.2l0 77.6c-16.8 23.2-141.6 60.8-141.6 60.8C130.4 668 128 843.2 128 843.2c0 55.2 27.2 52.8 27.2 52.8L512 896l356.8 0c0 0 27.2 2.4 27.2-52.8C896 843.2 893.6 668 736.8 653.6z" p-id="1141" fill="#2c2c2c"></path>
+                     </svg>
+                    <div style="width: 250px;height: 200px; background-color: rgb(255, 253, 253); position: absolute; z-index: 1000;display: none;margin-top: 8px;box-shadow: 2px 2px 2px 1px #FFFFFF ;" id="xinxi">
+                           <span style="display: inline-block; width: 100%; height: 50px; line-height: 50px;text-align: center; box-shadow: 1px 1px 1px  #888888 ;" >
+                                   <sub id="usenn"></sub>
+                           </span>
+                           <span style="display: inline-block;width: 100%; height: 50px; line-height: 50px;text-align: center; box-shadow: 1px 1px 1px  #888888 ;">
+                                <sub id="usenn1"></sub>
+                           </span>                            
+                        <span style="display: inline-block;width: 100%; height: 50px; line-height: 50px;text-align: center; box-shadow: 1px 1px 1px  #888888 ;"
+                            id="usenn3">
+                            <sub>个人中心</sub>
+                        </span>
+                        <span
+                            style="display: inline-block;width: 100%; height: 50px; line-height: 50px;text-align: center; box-shadow: 1px 1px 1px  #888888 ;"
+                            id="usenn2"><sub>退出</sub></span>
+                    </div>
+                 </span>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: whitesmoke; " id="goupo">
+                             <div style="width: 100px;height: 30px; background-color: #33CCCC ;text-align: center;border-radius: 10;">
+                                   购物车
+                             </div>
+                    </a>
+            </li>
+        </ul>
+
+        <div id="carouselExampleCaptions" class="carousel slide slideshow" data-ride="carousel" style="margin-top: 40px;">
+            <ol class="carousel-indicators" id="gogogogo">
+            </ol>
+            <div class="carousel-inner" id="gogogo">   
+                 
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="container">
+            <div class="row">
+                  <div class="col-sm-2">
+                        <div style="width: 100%; height: 350px;margin-top: 5px; box-shadow: 1px 1px 1px #CCCCCC ;">
+                               <ul>
+                                    <li style="width: 100%;height: 40px; border:seashell 1px  solid;list-style: none;">
+                                            <input type="text" id="text" name="" style="width: 60%; height: 100%;box-sizing: border-box;border: none;font-size: 12px;padding-left: 5px;background-color: #FFCC99;">
+                                            <input type="button" id="button" value="搜索" style="width: 40%; height: 100%;box-sizing: border-box; float: right;border: none; background-color: #FFCC99;color: black;font-size: 12px;border-left:#FFFFFF  1px solid;">
+                                    </li>
+                                    <li style="text-align: center;list-style: none; border: orange 1px solid;margin-top: 10px; border-left: none; border-right: none; border-top: none;">
+                                             产品分类
+                                    </li>
+                                    <li style="text-align: center;list-style: none;">
+                                            <ul style="list-style: none;" id="dhfjdsj">
+                                                <a href="./index.html">
+                                                 <li style="width: 100%;height: 40px; line-height: 40px;box-shadow: 1px 1px 1px  #CCCCCC ;">
+                                                     <span style="margin-left: 12px;">全部商品</span>
+                                                 </li>
+                                                </a>
+                                                <a href="javascript:;" id="fengmi">
+                                                 <li style="width: 100%;height: 40px;line-height: 40px;box-shadow: 1px 1px 1px  #CCCCCC ;">
+                                                    <span style="margin-left: 12px;">蜂蜜</span>
+                                                 </li>
+                                                </a>
+                                                <a href="javascript:;" id="fengwen">
+                                                 <li style="width: 100%;height: 40px; line-height: 40px;box-shadow: 1px 1px 1px  #CCCCCC ;">
+                                                    <span style="margin-left: 12px;">蜂王浆</span>
+                                                 </li>
+                                                </a>
+                                                <a href="javascript:;" id="fengjiaoye">
+                                                 <li style="width: 100%;height: 40px; line-height: 40px;box-shadow: 1px 1px 1px  #CCCCCC ;">
+                                                    <span style="margin-left: 12px;">蜂胶</span>
+                                                 </li>
+                                                </a>
+                                                <a href="javascript:;" id="huafen">
+                                                 <li style="width: 100%;height: 40px; line-height: 40px;box-shadow: 1px 1px 1px  #CCCCCC ;">
+                                                    <span style="margin-left: 12px;">蜂花粉</span>
+                                                 </li>
+                                                </a>
+                                                <a href="#">
+                                                 <li style="width: 100%;height: 40px; line-height: 40px;box-shadow: 1px 1px 1px  #CCCCCC ;">
+                                                    <span style="margin-left: 12px;">蜂蜡</span>
+                                                 </li>
+                                                </a>
+                                            </ul>
+                                    </li>
+                               </ul>
+                        </div>
+                  </div>
+                  <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col"
+                                style="width: 100%; height: 50px; text-align: center;line-height: 50px;font-size: 26px;color: crimson; border: darkgray 1px solid;margin-top: 5px;">
+                                热销产品</div>
+                        </div>
+                        <div class="row" id="go"></div>
+                        <div class="row">
+                            <div class="col"
+                                style="width: 100%; height: 50px; text-align: center;line-height: 50px;font-size: 26px;color: crimson; border: darkgray 1px solid;margin-top: 5px;">
+                                全部产品</div>
+                        </div>
+                        <div class="row" id="gogo"></div>
+                  </div> 
+ 
+            </div>
+           
+        </div>
+        <div class="container-fluid" style="height: 210px; background-color: cadetblue; margin-bottom: 0px;text-align: center;margin-top: 10px;font-size: 12px;padding-top: 70px;">
+             <p>隐私政策 - Bee network蜂网</p>
+             <p>增值电信业务经营许可证：@B3-202360288 自营经营者信息 网械平台备字[2018]第00007号</p>
+             <p>33015465542216号 Bee network蜂网版权所有©2003-2020互联网药品信息服务资格证书编号（v）-2017-0027 ICP备16011229号</p>
+             <p style="color: #AAAAAA ;">Copyright 2020 by My.All rights reserved.</p>
+        </div>
+        <div id="div" class="register" >
+                 <div style="width: 100%; height: 50px; ">
+                         <div style="width: 80%;height: 100%; text-align:left; float: left;line-height: 50px;font-size: 16px;padding-left: 15px;">用户登录</div>
+                         <div style="width: 20%; height: 100%; float: right; text-align: center;line-height: 50px;box-sizing: border-box;">
+                                <svg t="1579676577836" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6720"
+                                    width="32" height="32" id="anjieng">
+                                    <path
+                                        d="M854.970182 367.36A372.945455 372.945455 0 0 0 774.981818 249.018182a372.945455 372.945455 0 0 0-118.365091-79.965091A367.872 367.872 0 0 0 512 139.636364c-50.036364 0-98.722909 9.890909-144.64 29.393454a372.945455 372.945455 0 0 0-118.365091 79.965091 372.945455 372.945455 0 0 0-79.965091 118.365091A367.872 367.872 0 0 0 139.636364 512c0 50.059636 9.890909 98.722909 29.393454 144.64a372.922182 372.922182 0 0 0 79.965091 118.365091 372.898909 372.898909 0 0 0 118.365091 79.965091A367.872 367.872 0 0 0 512 884.363636c50.059636 0 98.722909-9.890909 144.64-29.393454A372.898909 372.898909 0 0 0 774.981818 774.981818a372.898909 372.898909 0 0 0 79.965091-118.365091A367.872 367.872 0 0 0 884.363636 512c0-50.036364-9.890909-98.722909-29.393454-144.64z m-42.845091 271.104a326.516364 326.516364 0 0 1-70.050909 103.633455 326.516364 326.516364 0 0 1-103.610182 70.027636A321.629091 321.629091 0 0 1 512 837.818182a321.629091 321.629091 0 0 1-126.464-25.693091 326.516364 326.516364 0 0 1-103.633455-70.050909 326.516364 326.516364 0 0 1-70.027636-103.610182A321.629091 321.629091 0 0 1 186.181818 512c0-43.776 8.634182-86.341818 25.693091-126.464a326.516364 326.516364 0 0 1 70.050909-103.633455 326.539636 326.539636 0 0 1 103.610182-70.027636A321.629091 321.629091 0 0 1 512 186.181818c43.776 0 86.341818 8.634182 126.464 25.693091a326.516364 326.516364 0 0 1 103.633455 70.050909 326.516364 326.516364 0 0 1 70.027636 103.610182A321.652364 321.652364 0 0 1 837.818182 512c0 43.776-8.657455 86.341818-25.693091 126.464z m-159.883636-266.705455a18.664727 18.664727 0 0 0-26.391273 0l-113.757091 113.803637-113.780364-113.803637a18.664727 18.664727 0 1 0-26.391272 26.414546l113.780363 113.803636-113.780363 113.803637a18.664727 18.664727 0 0 0 26.391272 26.414545l113.780364-113.803636 113.757091 113.803636a18.618182 18.618182 0 0 0 26.391273 0 18.664727 18.664727 0 0 0 0-26.391273L538.484364 512l113.757091-113.826909a18.664727 18.664727 0 0 0 0-26.414546z"
+                                        fill="#21A3DD" p-id="6721"></path>
+                                </svg>
+                        </div>
+                 </div>
+                <div  style="width: 100%; height: 250px;">
+                        <div style="width: 90%; height: 50px; margin-top: 10px;border: tomato 1px solid;margin: 0px auto;">
+                                <div style="width: 80%; height: 50px;float: left;">
+                                       <input id="ter" type="text" name="" style="width: 100%;height: 95%;border: none;padding-left: 10px;" placeholder="账号">
+                                </div>
+                                <div style="width: 20%; height: 50px;float: right; box-sizing: border-box;">
+                                           <img src="./img/lo.png" style="width: 40px;height: 40px;margin-top: 2px;" id="imgsrt">
+                                </div>
+                        </div>
+                        <div style="width: 90%; height: 50px; box-sizing: border-box;border: tomato 1px solid;margin: 0px auto;margin-top: 10px;">
+                                 <div style="width: 80%; height: 50px;float: left;">
+                                      <input id="pass" type="password" name="" style="width: 100%;height: 95%;border: none;padding-left: 10px;" placeholder="密码" >
+                                 </div>
+                                 <div style="width: 20%; height: 50px;float: right; box-sizing: border-box;">
+                                      <img src="./img/lo.png" style="width: 40px;height: 40px;margin-top: 2px;" id="imgsrtt">
+                                </div>
+                        </div>
+                        <div style="width: 100%; height: 50px; background-color: palevioletred;margin-top: 10px;box-sizing: border-box;">
+                                  <div style="width: 100%; height: 50px;background-color: peru;float: left;">
+                                           <input id="dengludf" value="登录" type="button" value="" style="width: 100%; height: 100%; border: none; background-color: tomato; color: white;">
+                                  </div>
+                        </div>
+                        <div style="width: 100%; height: 50px; background-color: palevioletred;margin-top: 10px;box-sizing: border-box;">
+                                   <a href="./html/zhuce.html" style="color: white; text-decoration: none;" target="_blank">
+                                      <div style="width: 100%; height: 50px;background-color: peru;float: left; text-align: center;line-height: 50px;" >
+                                             注册
+                                      </div>
+                                </a>
+                       </div>
+                </div>
+            </div>
+            <div class="gouwuche" id="gouwuche">
+                   <div>
+                         <strong>购物车</strong>
+                        <img src="./img/lo.png" id="fery">
+                   </div>
+                   <div>
+                        <div id="usety" style="overflow-y: scroll;">
+                        </div>
+                       
+                        <div>
+                              <li style="list-style: none;">购买地址：<span id="jasdghfjhgdg"></span></li>
+                              <p id="gohyf">购买</p>
+                        </div>
+                   </div>
+            </div>
+            <div class="vodiv" id="vodiv">
+                  <img src="./img/06.gif">
+            </div>
+            <div class="drdjh" id="drdjh">
+                <svg t="1580303895115" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4371"
+                    width="32" height="32">
+                    <path
+                        d="M510.205129 77.007439a441.499352 441.499352 0 0 0-43.716832 2.183948c220.482442 21.933671 392.674356 207.952133 392.674357 434.20724S686.970739 925.671173 466.488297 947.604844a441.499352 441.499352 0 0 0 43.716832 2.183948c241.011343 0 436.391188-195.378822 436.391188-436.391189S751.216472 77.007439 510.205129 77.007439z"
+                        fill="#89E5D3" p-id="4372"></path>
+                    <path
+                        d="M511.439935 62.923897c-247.196634 0-448.316381 201.119747-448.316381 448.31638s201.119747 448.316381 448.316381 448.316381c247.205849 0 448.325596-201.119747 448.325595-448.316381S758.645784 62.923897 511.439935 62.923897z m0 870.29843c-232.679988 0-421.98205-189.302062-421.98205-421.98205S278.760971 89.258227 511.439935 89.258227c232.688179 0 421.991265 189.302062 421.991265 421.98205S744.129138 933.222327 511.439935 933.222327z"
+                        fill="#00B290" p-id="4373"></path>
+                    <path
+                        d="M738.610396 369.795639L483.645544 624.760491 318.887037 459.993793c-5.141952-5.141952-13.47945-5.141952-18.621403 0-5.141952 5.141952-5.141952 13.47945 0 18.621402l174.068697 174.077911a13.12621 13.12621 0 0 0 9.311213 3.856976c3.369607 0 6.740237-1.286 9.311213-3.856976l264.276065-264.276065c5.141952-5.141952 5.141952-13.47945 0-18.621402-5.142976-5.141952-13.480474-5.141952-18.622426 0z"
+                        fill="#00B290" p-id="4374"></path>
+                </svg>
+            </div>
+            
+</body>
+</html>
+<script src="./js/db.js"></script>
+<script src="./js/jquery-3.4.1.min.js"></script>
+           <script>
+               // 登录判断
+                  $("#ter").blur(function(){
+                        
+                          if($("#ter").val().length>0){
+                                 $("#imgsrt").attr("src","./img/fg.png");
+                          }else{
+                                $("#imgsrt").attr("src", "./img/lo.png");
+                          }
+                  });
+                    $("#pass").blur(function () {
+                        if ($("#pass").val().length > 0) {
+                            $("#imgsrtt").attr("src", "./img/fg.png");
+                        } else {
+                            $("#imgsrtt").attr("src", "./img/lo.png");
+                        }
+                    });  
+                    $("#dengludf").click(function(){
+                            //判断是否存在用户
+                            selse($("#ter").val(), $("#pass").val(),function(e){
+                                        localStorage.setItem("shoujihao", e.shoujihao);
+                                        localStorage.setItem("name", e.name);
+                                        $("#div").fadeOut(1000);
+                                        window.location.href = "./index.html";
+                            });
+                    });
+                    var di;
+                            // 用户模块
+                            $("#gohyf").click(function () {
+                                if (localStorage.getItem("name") != null) {
+                                      $("#drdjh").fadeIn(1000);
+                                       clearInterval(di);
+                                    di = setTimeout(function () {
+                                        if ($("#drdjh").fadeOut(2000)) {
+                                            window.location.href = "./index.html";
+                                        }
+                                    }, 2000);
+                                } else {
+                                    alert("请登录");
+                                }  
+                        });
+  
+
+                    $("#usenn3").click(function(){
+                            window.open("./html/personalcentrr.html","_blank");
+                    });
+           </script>
+<script>
+       //加载数据jsonp,本地数据
+        $.getJSON("json/data.json",function(result){
+                    var htnlstr = template("getheros", result);
+                    $("#go").html(htnlstr);
+                     mun("#go", "div", "#a");
+                      
+        })
+        $.getJSON("json/alldata.json", function (result) {
+                    var htnlstr = template("duao", result);
+                    $("#gogo").html(htnlstr);
+                    mun("#gogo", "div", "#b");
+         })
+        $.getJSON("json/narousel.json", function (result) {
+                    var htnlstr = template("lunbo", result);
+                    $("#gogogo").html(htnlstr);
+        })
+        $.getJSON("json/narousel.json", function (result) {
+                    var htnlstr = template("indexes", result);
+                    $("#gogogogo").html(htnlstr);
+                    
+        })
+</script>
+<!-- 替代模块 -->
+<script type="text/html" id="getheros">
+        {{each recommend as value i}}
+              <div class="col" style="border: darkgrey 1px solid;text-align: center;margin-left:2px;margin-top:5px;position: relative;z-index:0;" id="a{{i}}">
+                   <a href="./html/fenye/{{value.id}}.html" target="_blank" >
+                   <img src="{{value.src}}" style="width: 100%;height: 200px;margin: 5px auto;">
+                   <span style="color: rgb(80, 74, 74);margin: 2px auto;">{{value.name}}</span>
+                   <p style="color: brown; margin-top: 5px;text-align: left;font-size: 26px;"><span>{{value.originalcost}}$</span><s style="font-size: 16px;margin-left: 10px;">{{value.nowtheprice}}$</s></p>
+                   <p style="height:60px;font-size:10px;color:#666666;">{{value.summarize}}<p>
+                   <p style="border-bottom: darkgray 1px solid;margin-bottom:10px;"></p>
+                   <p style="text-align: right; color: darkgray;">月销售{{value.quantityofsale}}</p>
+                   </a>
+                   <div style="width:100%;background-color:#000000; position:absolute; top:210px; left: 0; z-index:1000;text-align:content;height:150px;display: none;font-size: 12px; color: seashell;">
+                             {{value.pinglun}}
+                   </div>
+              </div>
+        {{/each}}
+</script>
+<script type="text/html" id="duao">
+        {{each recomm as value i}}
+              <div class="col" style="border: darkgrey 1px solid;text-align: center; margin-left:2px;margin-top:5px;position: relative;z-index:0;" id="b{{i}}">
+                   <a href="./html/fenye/{{value.id}}.html" target="_blank" >
+                   <img src="{{value.src}}" style="width: 100%;height: 200px;margin: 5px auto;">
+                   <span style="color: rgb(80, 74, 74);margin: 2px auto; text-align:center;">{{value.name}}</span>
+                   <p style="color: brown; margin-top: 5px;text-align: left;font-size: 26px;"><span>{{value.originalcost}}$</span><s  style="font-size: 16px;margin-left: 10px;">{{value.nowtheprice}}$</s></p>
+                   <p style="height:60px;font-size:10px;color:#666666;">{{value.summarize}}</p>
+                   <p style="border-bottom: darkgray 1px solid;margin-bottom:0px;"></p>
+                   <p style="text-align: right; color: darkgray;">月销售{{value.quantityofsale}}</p>
+                   </a>
+                   <div style="width:100%;background-color:#000000; position:absolute; top:210px; left: 0; z-index:1000;text-align:content;height:150px;display: none;font-size: 12px; color: seashell;">
+                           {{value.pinglun}}
+                   </div>
+                   
+              </div>
+              {{if (i+1)%3 == 0}}
+                   <div class="w-100"></div>
+              {{/if}}
+              
+        {{/each}}
+</script>
+<!-- 加载数据 轮播图 -->
+<script type="text/html" id="lunbo">
+         {{each neng as value i}}
+                 {{if i==0}}
+                     <div class="carousel-item active">
+                           <img src="{{value.src}}" class="d-block w-100" alt="..." style="height: 300px;width: 100%;">
+                           <div class="carousel-caption d-none d-md-block">
+                                <h5>{{value.name}}</h5>
+                                <p>{{value.summarize}}</p>
+                           </div>
+                     </div>
+                      {{else}}
+                    <div class="carousel-item">
+                           <img src="{{value.src}}" class="d-block w-100" alt="..." style="height: 300px;width: 100%;">
+                           <div class="carousel-caption d-none d-md-block">
+                                <h5>{{value.name}}</h5>
+                               <p>{{value.summarize}}</p>
+                           </div>
+                     </div>
+                 {{/if}}
+         {{/each}}
+</script>
+<script type="text/html" id="indexes">
+         {{each neng as value i}}
+                 {{if i==0}}
+                      <li data-target="#carouselExampleCaptions" data-slide-to="{{i}}" class="active"></li>
+                      {{else}}
+                      <li data-target="#carouselExampleCaptions" data-slide-to="{{i}}"></li>
+                 {{/if}}
+         {{/each}}
+</script>
+<script>
+            $(function () {
+                //加载数据到 用户模块
+                 $("#usenn").html("用户：" +localStorage.getItem("name"));
+                $("#usenn1").html("手机号：" + localStorage.getItem("shoujihao"));
+                 if (localStorage.getItem("name") != null) {
+                    $("#denglg").mouseover(function () {
+                        $("#xinxi").show();
+                    });
+                    $("#denglg").mouseout(function () {
+                        $("#xinxi").stop(true, false).hide();
+                    });
+                }
+                //删除localStorage中数据
+                $("#usenn2").click(function(){
+                        localStorage.removeItem("name");
+                        localStorage.removeItem("shoujihao");
+                        window.location.href = "./index.html";
+                });
+                $("#denglu").click(function () {
+                    $("#div").stop(true, false).fadeToggle(1000);
+                });
+                $("#anjieng").click(function () {
+                      $("#div").fadeOut(1000);
+                }); 
+                $("#fery").click(function () {
+                        $("#gouwuche").fadeOut(1000);
+                });
+                // 加载数据购物车
+                $("#goupo").click(function () {
+                    var h = document.getElementById("usety");
+                    h.innerHTML = "";
+                    $("#gouwuche").stop(true, false).fadeToggle(1000);
+                      if (localStorage.getItem("shoujihao") != null) {
+                        goou(localStorage.getItem("shoujihao"), function (e) {
+                                    var h = document.getElementById("usety");
+                                    h.innerHTML += "<li><img src='"+e.src+"' style = 'margin-top: 0px;'><span >"+e.name+"</span><sub style='margin-left: 10px;''>数量"+e.shouliaong+"</sub><sub style='margin-left: 10px;color: brown;''>价格" + e.jiage +"</sub><span onclick='delet("+e.id+")'>删除</span></li >" ;  
+                        });
+                        cjfhdfhgsd(localStorage.getItem("shoujihao"),function(e){
+                                    $("#jasdghfjhgdg").html(e.dizhi);
+                        });
+                    }
+                });
+                var s;
+                // 分类
+                $("#fengmi").click(function () {
+                    $.getJSON("json/fengmi.json", function (result) {
+                        var htnlstr = template("duao", result);
+                        $("#gogo").html(htnlstr);
+                        mun("#gogo", "div", "#b");
+                        $("#vodiv").fadeIn(1000);
+                        clearInterval(s);
+                        s  = setTimeout(function(){
+                                 $("#vodiv").fadeOut(2000);     
+                        },2000);
+                    })
+                });
+                $("#fengwen").click(function(){
+                        $.getJSON("json/fengwangjiang.json", function (result) {
+                        var htnlstr = template("duao", result);
+                        $("#gogo").html(htnlstr);
+                        mun("#gogo", "div", "#b");
+                            $("#vodiv").fadeIn(1000);
+                            clearInterval(s);
+                            s = setTimeout(function () {
+                                $("#vodiv").fadeOut(2000);
+                            }, 2000);
+                      })
+                });
+                $("#fengjiaoye").click(function () {
+                    $.getJSON("json/fengjiang.json", function (result) {
+                        var htnlstr = template("duao", result);
+                        $("#gogo").html(htnlstr);
+                        mun("#gogo", "div", "#b");
+                        $("#vodiv").fadeIn(1000);
+                        clearInterval(s);
+                        s = setTimeout(function () {
+                            $("#vodiv").fadeOut(2000);
+                        }, 2000);
+                    })
+                });
+                 $("#huafen").click(function () {
+                    $.getJSON("json/fenghuafen.json", function (result) {
+                        var htnlstr = template("duao", result);
+                        $("#gogo").html(htnlstr);
+                        mun("#gogo", "div", "#b");
+                        $("#vodiv").fadeIn(1000);
+                        clearInterval(s);
+                        s = setTimeout(function () {
+                            $("#vodiv").fadeOut(2000);
+                        }, 2000);
+                    })
+                });
+                $("#text").focus();
+                //搜索
+                $("#button").click(function(){
+                           
+                           $.getJSON("json/alldata.json", function (result) {
+                                  $.each(result,function(i,inem){
+                                         for(var i = 0; i< inem.length;i++){
+                                                 if(inem[i].name==$("#text").val()){
+                                                      var data ={
+                                                           recomm:[
+                                                               inem[i],
+                                                              {
+                                                                  "id": 0,
+                                                                  "name": "",
+                                                                  "originalcost": 0,
+                                                                  "nowtheprice": 0,
+                                                                  "quantityofsale": 0,
+                                                                  "src": "./img/zan.png",
+                                                                  "summarize": "",
+                                                                  "pinglun": "暂无商品"
+                                                              }
+                                                           ]
+                                                      }
+                                                         var htnlstr = template("duao", data);
+                                                        $("#gogo").html(htnlstr);
+                                                        mun("#gogo", "div", "#b");
+                                                      $("#vodiv").fadeIn(1000);
+                                                     clearInterval(s);
+                                                     s = setTimeout(function () {
+                                                         $("#vodiv").fadeOut(2000);
+                                                     }, 2000);
+                                                 }
+
+                                         }
+                                         
+                                  });
+                    })
+                });
+            });
+</script>
+<script>
+
+        //详细
+        function mun(v, s, g) {
+                 var index = $(v).children();
+                 for (var i = 0; i <= index.length - 1; i++) {
+                      $(g + i).hover(function () {
+                            $(this).children(s).stop(true, false).slideDown(300);;
+                      }, function () {
+                            $(this).children(s).slideUp(300);
+                     });
+                }
+
+        }
+</script>

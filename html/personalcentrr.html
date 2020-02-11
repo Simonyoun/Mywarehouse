@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+</head>
+       <style>
+                 .conn{
+                     width: 800px;
+                     height: 610px;
+                     margin: 80px auto;
+                     font-family: "宋体";
+                 }
+                 .div{
+                      width: 800px;
+                      height: 100px;
+                 }
+                 .div-1{
+                      width: 100px;
+                      height: 100px;
+                      border-radius: 60px;
+                      border: 1px solid #DDDDDD;
+                      float: left;
+                 }
+                 .div-1 img{
+                      width: 100px;
+                      height: 100px;
+                      border-radius: 50px;
+
+                 }
+                 .div-2{
+                      width: 680px;
+                      height: 100px;                 
+                      border: 1px solid #DDDDDD;
+                      line-height: 65px;
+                      float: right;
+                 }
+                 .div-2 ul{
+                      list-style: none;
+                 }
+                .div-2 ul li{
+                      float: left;
+                      margin-left: 30px;
+                      font-size: 12px;
+                      color: #777777 ;
+                 }
+                 .div-2>ul li:hover{
+                       color: coral;
+                       font-size: 18px;
+                 }
+                 .nio{
+                      width: 800px;
+                      height: 500px;
+                      margin-top: 10px;
+                      border: 1px solid #DDDDDD;
+                      position: relative;
+                 }
+                 .nio-1{
+                      width:750px;
+                      height: 50px;
+                      border: 1px solid #DDDDDD;
+                      border-bottom: crimson 2px solid;
+                      margin: 10px auto;
+                      color: grey;
+                      padding-left: 15px;
+                      line-height: 50px;
+                      
+                 }
+                 .nio-2{
+                      width:750px;
+                      height: 400px;
+                      margin: 0px auto;
+                      border: 1px solid #DDDDDD;
+                      position: absolute;
+                      left: 25px;
+                 }
+                 .nio-3{
+                      width:750px;
+                      height: 400px;
+                      margin: 0px auto;
+                      border: 1px solid #DDDDDD;
+                      position: absolute;
+                      left: 25px;
+                      display: none;
+                 }
+                 .nio-3 ul{
+                      list-style: none;
+                      
+                 }
+                 .nio-4{
+                      width:750px;
+                      height: 400px;
+                      margin: 0px auto;
+                      border: 1px solid #DDDDDD;
+                      position: absolute;
+                      left: 25px;
+                      display: none;
+                 }
+                 .danchukuang{
+                     width: 250px;
+                     height: 200px;
+                     position: absolute;
+                     z-index: 2000;
+                     left: 50%;
+                     top: 50%;
+                    transform: translate(-50%,-50%);
+                     background-color: #333333 ;
+                     color: #FFFFFF ;
+                     display: none;
+                 }
+       </style>
+<body>
+     <div class="conn">
+         <div class="div">
+              <div class="div-1">
+                     <img src="http://t7.baidu.com/it/u=3616242789,1098670747&fm=79&app=86&f=JPEG?w=900&h=1350">
+              </div>
+              <div class="div-2">
+                  <ul>
+                       <li id="xi1">基本资料</li>
+                       <li id="xi2">修改密码</li>
+                       <li id="xi3">添加地址</li>
+                       <li id="xi3"><a href="../index.html" style="color:#777777 ; text-decoration: none;">返回首页</a></li>
+                  </ul>
+             </div>
+        </div>
+        <div class="nio">
+               <div class="nio-1">
+                     账号信息 
+               </div>
+               <div class="nio-2" >
+                     <table id="#moi"  style="margin: 50px auto;font-size: 18px;color: #777777 ;">
+                            <tr >
+                                 <td>
+                                      用户名：
+                                 </td>
+                                 <td>
+                                      <sub id="dafdshas"></sub>
+                                 </td>
+                            </tr>
+                        <tr>
+                            <td>
+                                会员类型：
+                            </td>
+                            <td>
+                                <sub>vips</sub> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                手机号：
+                            </td>
+                            <td>
+                                <sub id="jahsdaey"></sub>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                邮箱：
+                            </td>
+                            <td>
+                                <sub id="gdystayjf"></sub>
+                            </td>
+                            <td >
+                                <a href="#" id="dafjdhgfdf">
+                                    <sub>设置</sub>
+                                </a>
+                                 
+                            </td>
+                        </tr>
+                     </table>
+               </div>
+               <div class="nio-3">
+                       <div style="width: 300px; height: 50px;margin: 10px auto;margin-top: 30px;">
+                                <div style="width: 100px; height: 50px;background-color: #000000 ;float: left;color: lavender;line-height: 50px;text-align: center;">
+                                      手机号： 
+                                </div>
+                                <div style="width: 200px; height: 50px;float: right; border: 1px solid #777777; box-sizing: border-box;line-height: 50px;" id="tdrtydtyfty">
+                                        
+                                </div>
+                       </div>
+                       <div style="width: 300px; height: 50px;margin: 10px auto;">
+                                 <div style="width: 100px; height: 50px;background-color: #000000;float: left;color: lavender;line-height: 50px;text-align: center;">
+                                      旧密码：
+                                </div>
+                                 <div style="width: 200px; height: 50px;float: right; border: 1px solid #777777 ; box-sizing: border-box;">
+                                    <input type="text" style="width: 180px; height: 46px;border: none;" id="dfuuysageyugfas">
+                                 </div>
+                        </div>
+                    <div style="width: 300px; height: 50px;margin: 10px auto;">
+                        <div style="width: 100px; height: 50px;background-color: #000000;float: left;color: lavender;line-height: 50px;text-align: center;">
+                                  新密码：
+                         </div>
+                        <div style="width: 200px; height: 50px;float: right; border: 1px solid #777777 ; box-sizing: border-box;">
+                                <input type="password" style="width: 180px; height: 46px;border: none;" id="awettgchgd">
+                        </div>
+                    </div>
+                    <div style="width: 300px; height: 50px;margin: 10px auto;background-color: lightblue;line-height: 50px;text-align: center;" id="vnjhdsgdf">
+                             确认
+                    </div>
+                </div>
+                <div class="nio-4">
+                      <div style="width: 80%;margin: 0px auto;margin-top: 100px;">
+                                            省份:<select id="prove">
+                                                <option value="" id="sdsgds">--请选择省份--</option>
+                                            </select>
+                                            城市:<select id="city">
+                                                <option value="">--请选择城市--</option>
+                                            </select>
+                                            <select id="county" style="display: none;">
+                                                <option value="" style="display: none;">--请选择区县--</option>
+                                            </select>
+                                            <select name="" id="jiedao" style="display: none;">
+                                                <option value="" style="display: none;">--请选择街道--</option>
+                                            </select>
+                                            详细地址：<input type="text" id="dfjdhfggd">
+                      </div>
+                      <div class="sdfddg" style="width: 50%;margin: 0px auto; background-color: lightcoral;height: 50px;margin-top: 100px;text-align: center;line-height: 50px;" id="gdgtyfastyfyd">设置</div>
+                </div>
+        </div> 
+    </div>
+    <div class="danchukuang" id="danchukuang">
+           <div style="width: 100%; height: 50px;"><span>设置邮箱</span> <samp style="display: inline-block; float: right;"><img src="../img/lo.png" id="jsdhfsgfds"></samp></div>
+           <div style="width: 100%; height: 50px;">
+                邮箱:<input type="text" style="width: 150px;height: 45px;margin-left: 40px;" id="safjhdstyfu">
+           </div>
+           <div style="width: 100%; height: 50px;text-align: center;line-height: 50px;background-color: lightslategray;margin-top: 20px;" id="wgaycgvcajkf">设置</div>
+    </div>
+</body>
+</html>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/db.js"></script>
+<script>
+
+        $(function(){
+                var sdfhj = localStorage.getItem("shoujihao");
+                var name = localStorage.getItem("name");
+                 $("#tdrtydtyfty").html(sdfhj);
+                 $("#dafdshas").html(name); 
+                 $("#jahsdaey").html(sdfhj);
+                 aghsdfghd(sdfhj,function(e){
+                        $("#gdystayjf").html(e);
+                 });
+                 $("#vnjhdsgdf").click(function(){
+                        dgfjhgdh(sdfhj, $("#dfuuysageyugfas").val(), $("#awettgchgd").val())
+                 }); 
+                 $("#wgaycgvcajkf").click(function(){
+                        ajdhfjhdheu(sdfhj, $("#safjhdstyfu").val());
+                 });
+                 $("#gdgtyfastyfyd").click(function(){
+                            ytseygdzjhxgcs(sdfhj, $("#prove option:selected").text()+ $("#city option:selected").text()+ $("#dfjdhfggd").val());
+                 });
+                 $("#xi1").click(function(){
+                         $(".nio-3").fadeOut(1000);
+                         $(".nio-4").fadeOut(1000);
+                         $(".nio-2").fadeIn(1000);
+                 });
+                 $("#xi2").click(function(){
+                        $(".nio-2").fadeOut(1000);
+                        $(".nio-4").fadeOut(1000);
+                        $(".nio-3").fadeIn(1000);
+                 });
+                $("#xi3").click(function () {
+                         $(".nio-2").fadeOut(1000);
+                         $(".nio-3").fadeOut(1000);
+                         $(".nio-4").fadeIn(1000);                       
+                });
+                $("#dafjdhgfdf").click(function(){
+                       $("#danchukuang").fadeIn(1000);
+                });
+            $("#jsdhfsgfds").click(function () {
+                $("#danchukuang").fadeOut(1000);
+            });
+        });
+</script>
+<script type="text/javascript">
+    /*分析:
+     * 1.创建页面元素(下拉列表框 select)
+     * 2.创建二维数组存储数据(地区)
+     * 3.获取页面元素(下拉框 省份,城市,区县)
+     * 4.将所有的省份添加在省份的下拉框(for循环遍历数组,if判断索引为2,的值值是否为0,累计添加省份名,)
+     * 5.给省份添加内容改变时触发事件(onchange)
+     * 根据选择的省份获取(遍历)对应的城市(添加pero.value 也可添加索引值Pero.selectIndx=1(代码不灵活))
+     * 6.给城市.区县用省份同样方法获取当内容改变触发事件时遍历数据
+     * 7.在点击其他省份时清空区县和街道数据
+     */
+    //2
+    var arr = [
+        [1, '江西省', 0],
+        [2, '广东省', 0],
+
+       
+        [3, '南昌市', 1],
+        [4, '九江市', 1],
+        [5, '景德镇市', 1],
+        [6, '鹰潭市', 1],
+        [7, '抚州市', 1],
+        [8, '新余市', 1],
+        [9, '宜春市', 1],
+        [20, '九江市', 1],
+        [11, '萍乡市', 1],
+        [12, '吉安市', 1],
+        [13, '赣州市', 1],
+
+        [14, '广州市', 2],
+        [15, '韶关市', 2],
+        [16, '梅州市', 2],
+        [17, '河源市', 2],
+        [18, '清远市', 2],
+        [19, '潮州市', 2],
+        [20, '揭阳市', 2],
+        [21, '汕头市', 2],
+        [22, '肇庆市', 2],
+        [23, '惠州市', 2],
+        [24, '佛山市', 2],
+        [25, '东莞市', 2],
+        [26, '云浮市', 2],
+        [27, '汕尾市', 2],
+        [28, '江门市', 2],
+        [29, '中山市', 2],
+        [30, '深圳市', 2],
+        [31, '珠海市', 2],
+        [32, '阳江市', 2],
+        [33, '茂名市', 2],
+        [34, '湛江市', 2],
+
+        [7, '雁塔区', 4],
+        [8, '高新区', 4],
+        [9, '长安区', 4],
+
+        [10, '鱼化寨街道', 7],
+        [11, '大雁塔街道', 7],
+        [12, '小寨路街道', 7],
+
+        [13, '兰州市', 2]
+    ]
+
+    window.onload = function () {
+        //3
+        var prove = document.getElementById('prove'); ;
+        var city = document.getElementById('city');
+        var count = document.getElementById('county');
+        var jiedao = document.getElementById('jiedao');
+        //console.log(prove+';'+city+';'+count+';'+jiedao);
+        //4
+        var str = '<option>--请选择省份--</option>';
+        //遍历数组,存储省份的下拉框数据
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i][2] == 0) { //数组中索引为2的值为0,则为省份
+                //累计添加省份名,并给value值为数组为的数
+                str += '<option value="' + arr[i][0] + '">' + arr[i][1] + '</option>';
+            }
+        }
+        //添加到prove的下拉框中	
+        prove.innerHTML = str;
+
+        //当prove下拉框数据内容改变时触发事件
+        prove.onchange = function () {
+
+            str = '<option>--请选择城市--</option>';
+            //在点击其他省份时给区县和街道添加标签
+            count.innerHTML = '<option>--请选择区县--</option>';
+            jiedao.innerHTML = '<option>--请选择街道--</option>';
+            //循环遍历数组中的值
+            for (var i = 0; i < arr.length; i++) {
+                //如果省份的value值等于数组中最后一个索引的值
+                if (prove.value == arr[i][2]) {
+                    //累计在添加城市名
+                    str += '<option value="' + arr[i][0] + '">' + arr[i][1] + '</option>';
+                }
+            }
+            //将数据添加到城市的下拉框中
+            city.innerHTML = str;
+        }
+
+        //当city下拉框数据内容改变时触发事件
+        city.onchange = function () {
+            str = '<option>--请选择区县--</option>'
+            for (var i = 0; i < arr.length; i++) {
+                //若城市的value值等于数组最后一个索引的值
+                if (city.value == arr[i][2]) {
+                    //累计添加区县名
+                    str += '<option value="' + arr[i][0] + '">' + arr[i][1] + '</option>';
+                }
+            }
+            //将数据添加到区县的下拉框中
+            count.innerHTML = str;
+        }
+
+        //当count下拉框
+        count.onchange = function () {
+            str = '<option>--请选择街道--</option>';
+            for (var i = 0; i < arr.length; i++) {
+                //若区县的value值等于数组最后一个索引的值
+                if (count.value == arr[i][2]) {
+                    //累计添加街道名
+                    str += '<option>' + arr[i][1] + '</option>';
+                }
+            }
+            //将数据添加到街道的下拉框中
+            jiedao.innerHTML = str;
+        }
+    }
+</script>

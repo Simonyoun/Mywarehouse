@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.slideshow {
+  width: 100%;
+  height: 300px;
+}
+
+.register {
+  z-index: 1000;
+  width: 300px;
+  height: 300px;
+  background-color: #fdfdfc;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  box-shadow: 3px 3px 2px 3px #999999;
+}
+
+#goodssize {
+  width: 50px;
+  height: 400px;
+  margin-top: 5px;
+  margin-left: 2px;
+  text-align: center;
+  border: darkgray 1px solid;
+}
+
+.gouwuche {
+  width: 500px;
+  height: 500px;
+  display: none;
+  position: absolute;
+  background-color: ghostwhite;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: 1px 1px 1px 1px #000000;
+}
+.gouwuche div:first-child {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+.gouwuche div:first-child strong {
+  font-size: 26px;
+}
+.gouwuche div:first-child img {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.gouwuche div:last-child {
+  width: 100%;
+  height: 450px;
+}
+.gouwuche div:last-child img {
+  width: 50px;
+  height: 40px;
+  float: left;
+}
+.gouwuche div:last-child div:first-child {
+  height: 350px;
+}
+.gouwuche div:last-child div:first-child > li {
+  width: 85%;
+  height: 40px;
+  margin: 5px auto;
+  box-shadow: 1px 1px 1px 1px #CCCCCC;
+  list-style: none;
+  line-height: 40px;
+}
+.gouwuche div:last-child div:first-child > li span:first-child {
+  float: left;
+  font-size: 12px;
+}
+.gouwuche div:last-child div:first-child > li span:last-child {
+  width: 70px;
+  height: 40px;
+  float: right;
+  line-height: 40px;
+  background-color: crimson;
+  text-align: center;
+}
+.gouwuche div:last-child div:last-child > li {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 10px;
+}
+.gouwuche div:last-child div:last-child > p {
+  width: 100%;
+  height: 45px;
+  background-color: red;
+  color: seashell;
+  text-align: center;
+  line-height: 45px;
+}
+
+.vodiv {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  z-index: 2000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.drdjh {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 2000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 60px;
+  display: none;
+}
+
+/*# sourceMappingURL=index.css.map */

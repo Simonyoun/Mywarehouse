@@ -1,0 +1,53 @@
+*{
+     margin: 0px;
+     padding: 0px;
+}
+.con{
+     width: 80%;
+     margin: 10px auto;
+     
+}
+.condiv{
+      width: 100%;
+      text-align: center;
+      border: 1px solid #CCCCCC;
+      animation: ma 5s;
+}
+.condiv>h1{
+      text-align: center;
+      margin-bottom: 10px;
+}
+.condiv>img{
+      width: 33%;
+      height: 300px;
+      margin: 0px auto;
+}
+.condiv2{
+      margin-top: 50px;
+      width: 100%;
+      text-align: center;
+      border: 1px solid #CCCCCC ;
+      animation: mm 5s;
+
+}
+.condiv2>h1{
+      text-align: center;
+      margin-bottom: 10px;
+}
+
+@keyframes ma{
+      from{
+           transform: translateX(-600px);
+      }
+      to{
+         transform: translateX(0px);
+      }
+}
+@keyframes mm{
+      from{
+           transform: translateX(600px);
+      }
+      to{
+         transform: translateX(0px);
+      }
+}

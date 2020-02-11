@@ -1,0 +1,64 @@
+{
+    "recomm": [
+        {
+            "id": 15,
+            "name": "油菜花粉",
+            "originalcost": 138,
+            "nowtheprice": 98,
+            "quantityofsale": 2000,
+            "src": "https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike116%2C5%2C5%2C116%2C38/sign=58185a7d50afa40f28cbc68fca0d682a/b151f8198618367af15c929224738bd4b21ce5ac.jpg",
+            "summarize": "提高抵抗力，治疗前列腺等",
+            "pinglun": "油菜是我国传统主要油料作物，种植地域广。此外，油菜花期长，花粉产量大，所以油菜花粉是我国最大宗蜂花粉，在我国花粉中占有举足轻重地位"
+        },
+        {
+            "id": 16,
+            "name": "茶花粉",
+            "originalcost": 138,
+            "nowtheprice": 98,
+            "quantityofsale": 2000,
+            "src": "https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=8a82df3e3af33a878a600848a7357b5d/cc11728b4710b9129747aaf0c3fdfc039245223d.jpg",
+            "summarize": "清头目、除烦渴、化痰、消食、",
+            "pinglun": "茶花粉的生产季节在每年的9-11月份，多产于浙江、安徽、江苏、河南、江西等地，每群蜂可产1-5公斤。新鲜茶花粉具有特殊的茶香气息，味道微甜，呈橘红色或黄色。茶花粉富含蛋白质，氨基酸，脂肪酸，维生素，活性酶等多种有效活性成分"
+        },
+        {
+             "id": 17,
+             "name": "菊花粉",
+             "originalcost": 138,
+             "nowtheprice": 98,
+             "quantityofsale": 2000,
+             "src": "https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=77a612fca1c27d1eb12b33967abcc60b/21a4462309f790523bbbe76609f3d7ca7acbd5c6.jpg",
+            "summarize": "清热祛火",
+            "pinglun": "菊花粕是东北、内蒙、新疆等地种植的万寿菊的花经过提取天色素后的剩余物。"
+        },
+        {
+            "id": 18,
+            "name": "梨花粉 ",
+            "originalcost": 138,
+            "nowtheprice": 98,
+            "quantityofsale": 2000,
+            "src": "https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=3525ce038d13632701e0ca61f0e6cb89/fcfaaf51f3deb48fa8aef301f71f3a292cf5782d.jpg",
+            "summarize": "燕脂桃颊梨花粉",
+            "pinglun": "梨花粉，是指妇女化妆所用的粉，出自唐诗《初识梅花》。"
+        },
+        {
+            "id": 19,
+            "name": "",
+            "originalcost": 0,
+            "nowtheprice": 0,
+            "quantityofsale": 0,
+            "src": "./img/zan.png",
+            "summarize": "",
+            "pinglun": "暂无商品"
+        },
+        {
+            "id": 20,
+            "name": "",
+            "originalcost": 0,
+            "nowtheprice": 0,
+            "quantityofsale": 0,
+            "src": "./img/zan.png",
+            "summarize": "",
+            "pinglun": "暂无商品"
+        }
+    ]
+}
